@@ -99,7 +99,7 @@ form.addEventListener('submit', function (e) {
 
   fetch('https://script.google.com/macros/s/AKfycbz96cEfcv6tdQ6qADQhengTAIuEtCt2gZFAWQfJkgp32HSxAvusIyQCvqKo0zDUjW3j/exec', {
     method: 'POST',
-    mode: 'no-cors',
+    // mode: 'no-cors',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   }).then(() => {
