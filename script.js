@@ -15,7 +15,7 @@ const phoneInput = document.getElementById('phone');
 const emailInput = document.getElementById('email');
 const form = document.getElementById('dataForm');
 
-// Populate district checkboxes on manager change
+// Populate district checkboxes
 managerSelect.addEventListener('change', function () {
   const selectedManager = this.value;
   districtContainer.innerHTML = '';
@@ -42,13 +42,13 @@ managerSelect.addEventListener('change', function () {
   }
 });
 
-// Get selected districts from checkboxes
+// Get selected districts
 const getSelectedDistricts = () => {
   const checked = document.querySelectorAll('#districtCheckboxes input[type="checkbox"]:checked');
   return Array.from(checked).map(cb => cb.value);
 };
 
-// Allow only digits in phone input
+// Allow only digits in phone
 phoneInput.addEventListener('input', function () {
   this.value = this.value.replace(/\D/g, '').slice(0, 10);
 });
@@ -99,7 +99,6 @@ form.addEventListener('submit', function (e) {
 
   fetch('https://script.google.com/macros/s/AKfycbz96cEfcv6tdQ6qADQhengTAIuEtCt2gZFAWQfJkgp32HSxAvusIyQCvqKo0zDUjW3j/exec', {
     method: 'POST',
-    // mode: 'no-cors',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   }).then(() => {
@@ -110,3 +109,5 @@ form.addEventListener('submit', function (e) {
     document.getElementById('msg').innerHTML = "❌ Error: " + err;
   });
 });
+
+ 
