@@ -97,7 +97,7 @@ form.addEventListener('submit', function (e) {
     schedule_date: scheduleDate
   };
 
-  fetch('https://script.google.com/macros/s/AKfycbzqZdiXI68sxeLuQmklm6NjNg7mxzSwdfgWQX3KCOX_I88ZBrkPAVYMQaMx2WbqcjCrkg/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbz96cEfcv6tdQ6qADQhengTAIuEtCt2gZFAWQfJkgp32HSxAvusIyQCvqKo0zDUjW3j/exec', {
     method: 'POST',
     mode: 'no-cors',
     headers: { 'Content-Type': 'application/json' },
