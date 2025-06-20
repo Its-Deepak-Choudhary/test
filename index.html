@@ -7,11 +7,12 @@
 </head>
 <body>
   <div class="container">
-   <h1 style="text-align: center; color: #34495e; font-size: 30px; margin-bottom: 10px; font-weight: bold;">
-    IT-PMU Team
-</h1>
-</br>
+    <h1 style="text-align: center; color: #34495e; font-size: 30px; margin-bottom: 10px; font-weight: bold;">
+      IT-PMU Team
+    </h1>
+    <br>
     <h2>बिहार मेडिकल सर्विसेज एंड इंफ्रास्ट्रक्चर कॉर्पोरेशन लि० (BMSICL) HIOMS अंतर्गत डाटा प्रविष्टि का दैनिक कार्यक्रम प्रतिवेदन</h2>
+    
     <form id="dataForm">
       <label for="schedule_date">Schedule Date:</label>
       <input type="date" id="schedule_date" required>
@@ -28,23 +29,11 @@
         <option value="Markandey Shahi">Markandey Shahi</option>
       </select>
 
-   <!--  <label>District:</label>
-            <select id="district" required>
-                <option value="">-- Select District --</option>
-            </select>  -->
- <!-- Label for the group -->
-<label for="districtCheckboxes" style="display: block; margin-top: 10px;">District:</label>
-<!-- Container for district checkboxes -->
-<div id="districtCheckboxes" class="checkbox-group" style="margin-bottom: 15px;"></div>
-
-
-
+      <label for="districtCheckboxes" style="display: block; margin-top: 10px;">District:</label>
+      <div id="districtCheckboxes" class="checkbox-group" style="margin-bottom: 15px;"></div>
 
       <label for="name">Project Manager / Concern Manager Name:</label>
       <input type="text" id="name" placeholder="Enter your name with designation" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Enter your Gmail ID" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" required>
 
       <label for="phone">Contact:</label>
       <div style="display: flex; gap: 5px;">
@@ -59,6 +48,7 @@
 
     <div id="msg"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
